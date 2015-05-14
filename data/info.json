@@ -1,1 +1,21 @@
-{"oussama":{"age":23},"mouhssin":{"age":21}}
+{
+	"animes": [
+		{
+			"title": "Fate/stay night: Unlimited Blade Works 2nd Season",
+			"des": "The 2nd season of ufotable's adaptation of the Unlimited Blade Works route of Fate/stay night.",
+			"type": "TV",
+			"image_url": "/img/dir/anime/reg/20792-463frI6M1L7K.jpg",
+			"episodes": 13,
+			"status": "currently airing",
+			"start_date": "Apr 5, 2015",
+		},{
+			"title": "Baby Steps 2",
+			"des": "Season 2 of Baby Steps.",
+			"type": "TV",
+			"image_url": "/img/dir/anime/reg/20854-ojmYcYs8YlnM.jpg",
+			"episodes": 25,
+			"status": "currently airing",
+			"start_date": "Apr 5, 2015"
+		}
+	]
+}

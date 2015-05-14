@@ -7,8 +7,10 @@ require 'jsoner/FileLoader.php';
 require 'jsoner/Jsoner.php';
 
 $file = 'data/info.json';
-// load the file!
-$jsoner = new Jsoner($file);
+// create instance
+$jsoner = new Jsoner();
+// load Json file
+$jsoner->load($file);
 ````
 
 with the ````$jsoner```` object you can:

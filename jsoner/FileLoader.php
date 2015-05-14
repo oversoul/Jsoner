@@ -52,6 +52,7 @@ class FileLoader
 	{
 		if ( ! file_exists( $this->file )) 
 			throw new Exception("File not found ".$this->file);
+		return;
 	}
 
 	/**

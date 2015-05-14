@@ -16,9 +16,18 @@ class Jsoner implements ArrayAccess, IteratorAggregate, countable{
 	/**
 	 * load the content in the items array
 	 */
-	public function __construct($file)
+	public function __construct( array $data = array() )
 	{
-		$this->fileLoader = new FileLoader($file);
+		$this->items = $data;
+	}
+
+	/**
+	 * Load file
+	 * @param  string $filename
+	 */
+	public function load($file)
+	{
+		$this->fileLoader = new FileLoader( $file );
 		$this->setData();
 	}
 
@@ -75,7 +84,7 @@ class Jsoner implements ArrayAccess, IteratorAggregate, countable{
 		if ( empty($keys) ) {
 			if ( ! isset($value) ) return null;
 			if ( is_string($value) || is_numeric($value) ) return $value;
-			return new self( $value );
+			return new Jsoner( $value );
 		}
 		return $this->_get($keys, $value);
 	}

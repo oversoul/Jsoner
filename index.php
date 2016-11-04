@@ -3,6 +3,12 @@ require 'jsoner/FileLoader.php';
 require 'jsoner/Jsoner.php';
 
 $file = 'data/info.json';
-$jsoner = new Jsoner($file);
+
+// create instance
+
+$jsoner = new Jsoner();
+
+// set file.
+$jsoner->load($file);
 
 var_dump($jsoner->count());
